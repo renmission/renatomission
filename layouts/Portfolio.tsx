@@ -42,6 +42,9 @@ const Portfolio = () => {
   ];
   return (
     <section>
+       <div className="text-2xl font-semibold text-center text-gray-700 py-10 dark:text-white">
+        <h2>Here are some of my projects</h2>
+      </div>
       <div className="flex flex-col gap-10 pb-10 lg:flex-row lg:flex-wrap">
         {webs.map(({ id, src, title }) => (
           <div
