@@ -58,7 +58,7 @@ const TechStack = () => {
 
   return (
     <section>
-      <div className="text-2xl font-semibold text-center text-gray-700 py-10 dark:text-white">
+      <div className="text-2xl font-semibold text-center text-gray-700 py-10 md:text-3xl lg:text-3xl dark:text-white">
         <h2>My Technology Stack</h2>
       </div>
       <div className="flex  gap-5 pb-10 flex-row flex-wrap">

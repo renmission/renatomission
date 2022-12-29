@@ -1,65 +1,75 @@
-import Image from 'next/legacy/image';
+import Link from "next/link";
+import Image from "next/legacy/image";
 
-import web1 from '../public/web1.png';
-import web2 from '../public/web2.png';
-import web3 from '../public/web3.png';
-import web4 from '../public/web4.png';
-import web5 from '../public/web5.png';
-import web6 from '../public/web6.png';
+import cabrinimed from "../public/cabrinimed.png";
+import jott from "../public/jott.png";
+import web3 from "../public/web3.png";
+import web4 from "../public/web4.png";
+import web5 from "../public/web5.png";
+import web6 from "../public/web6.png";
 
 const Portfolio = () => {
-  const webs = [
+  const works = [
     {
       id: 1,
-      src: web1,
-      title: 'HTML',
+      src: cabrinimed,
+      title: "HTML",
+      link: "https://cabrinimed.com/",
     },
     {
       id: 2,
-      src: web2,
-      title: 'CSS',
+      src: jott,
+      title: "JOTT",
+      link: "https://jott-eight.vercel.app/",
     },
     {
       id: 3,
       src: web3,
-      title: 'Javascript',
+      title: "Javascript",
+      link: "https://cabrinimed.com/",
     },
     {
       id: 4,
       src: web4,
-      title: 'ReactJS',
+      title: "ReactJS",
+      link: "https://cabrinimed.com/",
     },
     {
       id: 5,
       src: web5,
-      title: 'NodeJS',
+      title: "NodeJS",
+      link: "https://cabrinimed.com/",
     },
     {
       id: 6,
       src: web6,
-      title: 'GraphQL',
+      title: "GraphQL",
+      link: "https://cabrinimed.com/",
     },
   ];
   return (
     <section>
-       <div className="text-2xl font-semibold text-center text-gray-700 py-10 dark:text-white">
-        <h2>Here are some of my projects</h2>
+      <div className="text-3xl font-semibold  text-teal-400 py-3 md:text-3xl lg:text-4xl">
+        <h2>Projects</h2>
       </div>
-      <div className="flex flex-col gap-10 pb-10 lg:flex-row lg:flex-wrap">
-        {webs.map(({ id, src, title }) => (
-          <div
-            key={id}
-            className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300 cursor-pointer basis-1/3 flex-1"
-          >
-            <Image
-              src={src}
-              alt={title}
-              className="rounded-lg object-cover"
-              width={100}
-              height={100}
-              layout="responsive"
-            />
-          </div>
+      <div className="text-sm  text-gray-300 pb-6 md:text-md lg:text-lg">
+        <p>Some of the side projects I&apos;m working on:</p>
+      </div>
+
+      <div className="flex flex-col gap-10 pb-10 ">
+        {works.map(({ id, src, title, link }) => (
+          <Link key={id} href={link} target="_blank">
+            <div className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300 cursor-pointer basis-1/3 flex-1">
+              <Image
+                src={src}
+                alt={title}
+                className="rounded-lg object-cover"
+                width={100}
+                height={100}
+                layout="responsive"
+              />
+            </div>
+          </Link>
         ))}
       </div>
     </section>
