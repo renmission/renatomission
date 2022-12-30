@@ -57,25 +57,36 @@ const TechStack = () => {
   ];
 
   return (
-    <section>
-      <div className="text-2xl font-semibold text-center text-gray-700 py-10 md:text-3xl lg:text-3xl dark:text-white">
-        <h2>My Technology Stack</h2>
-      </div>
-      <div className="flex  gap-5 pb-10 flex-row flex-wrap">
-        {devIcons.map(({ id, src, title }) => (
-          <div
-            key={id}
-            className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-95 duration-300 cursor-pointer basis-1/5 flex-1 lg:basis-2"
-          >
-            <Image
-              src={src}
-              alt={title}
-              onMouseOver={() => setShowTitle(!showTitle)}
-              className="rounded-lg object-cover"
-              layout="responsive"
-            />
+    <section id="tech" className="py-16">
+      <div className="container">
+        <div className="row justify-center pb-12">
+          <div className="w-full">
+            <div className="section_title pb-6 text-center">
+              <h2 className="text-4xl pb-4 font-semibold text-center">
+                My Technology Stack
+              </h2>
+              <h3 className="main_title">
+                My preferred weapons of choice
+              </h3>
+            </div>
           </div>
-        ))}
+        </div>
+        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-8 justify-between">
+          {devIcons.map(({ id, src, title }) => (
+            <div
+              key={id}
+              className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-95 duration-300 cursor-pointer basis-1/5 flex-1 lg:basis-2"
+            >
+              <Image
+                src={src}
+                alt={title}
+                onMouseOver={() => setShowTitle(!showTitle)}
+                className="rounded-lg object-cover"
+                layout="responsive"
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

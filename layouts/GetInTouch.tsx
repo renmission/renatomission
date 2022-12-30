@@ -3,11 +3,11 @@ import Link from "next/link";
 const GetInTouch = () => {
   return (
     <>
-      <section className="py-6 mt-5">
-        <div className="text-4xl py-2 text-teal-400">
+      <section className="py-6">
+        <div className="text-4xl py-4 text-teal-400">
           <h2>Get in touch</h2>
         </div>
-        <div className="leading-6">
+        <div className="leading-6 text-white">
           <p>
             Do you have a job opportunity or idea you&apos;d like to discuss?
             Feel to react me at{" "}

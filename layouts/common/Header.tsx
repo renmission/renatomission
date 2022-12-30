@@ -18,7 +18,7 @@ const Header = () => {
               target="_blank"
               legacyBehavior
             >
-              <a className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-16 py-4 font-semibold rounded-md ml-5 sm:px-6 sm:py-2">
+              <a className="bg-gradient-to-r to-emerald-600 from-sky-400 text-white px-16 py-4 font-semibold rounded-md ml-5 sm:px-6 sm:py-2">
                 Hire me?
               </a>
             </Link>
