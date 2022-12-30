@@ -4,6 +4,7 @@ import Portfolio from "../layouts/Portfolio";
 import Hero from "../layouts/Hero";
 import AppContainer from "../layouts/AppContainer";
 import Header from "../layouts/common/Header";
+import GetInTouch from "../layouts/GetInTouch";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <Hero />
         <Portfolio />
         <TechStack />
+        <GetInTouch />
         <Footer />
       </AppContainer>
     </>
