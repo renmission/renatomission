@@ -6,7 +6,7 @@ import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 const Hero = () => {
   return (
     <>
-      <section className="grid grid-cols-3 gap-4" id="about">
+      <section className="grid grid-cols-3 gap-4 md:py-16" id="about">
         <div className="py-5 pr-6 col-span-6 lg:col-span-4 lg:col-start-1 lg:col-end-4 ">
           <h2 className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400 py-2 leading-10 text-teal-400 font-bold text-4xl sm:text-5xl">
             Hello! I&apos;m Ren, a developer based in Philippines.
@@ -43,7 +43,7 @@ const Hero = () => {
               target="_blank"
               legacyBehavior
             >
-              <span className="border h-16 rounded-[50%] py-2 px-1 border-teal-400">
+              <span className="border h-16 rounded-[50%] py-2 px-1 border-teal-400 sm:ml-4">
                 <span className="font-semibold"> Hire me</span>
                 <span className="font-semibold italic ">?</span>
               </span>
@@ -84,7 +84,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="relative invisible rounded-md w-72 h-96 mt-5 overflow-hidden lg:visible col-end-7 col-span-2">
+        <div className="relative rounded-md w-72 h-96 mt-5 overflow-hidden hidden lg:block col-end-7 col-span-2">
           <Image
             src={me}
             alt="ren mission"
