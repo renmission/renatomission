@@ -6,7 +6,7 @@ import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 const Hero = () => {
   return (
     <>
-      <section className="min-h-screen grid grid-cols-3 gap-4" id="about"> 
+      <section className="min-h-screen grid grid-cols-3 gap-4" id="about">
         <div className="py-5 pr-6 col-span-6 lg:col-span-4 lg:col-start-1 lg:col-end-4 ">
           <h2 className="text-5xl py-2 leading-10 text-teal-400 font-medium md:text-5xl ">
             Hello! I&apos;m Ren, a developer based in Philippines.
@@ -50,31 +50,35 @@ const Hero = () => {
             </Link>
           </p>
 
-          <div className="py-5">
-            <Link
-              href={"https://www.linkedin.com/in/renmission/"}
-              target="_blank"
-            >
-              <button className="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded mr-4">
-                <div className="flex justify-between">
-                  <span className="mr-2 mt-1">
-                    <AiFillLinkedin />{" "}
-                  </span>
-                  <span>View Linkedin</span>
-                </div>
-              </button>
-            </Link>
+          <div className="py-5 flex flex-col sm:flex-row sm:flex-wrap">
+            <div className="py-2">
+              <Link
+                href={"https://www.linkedin.com/in/renmission/"}
+                target="_blank"
+              >
+                <button className="bg-teal-500 hover:bg-teal-700 text-white font-bold px-16 py-4 sm:py-2 sm:px-4 rounded mr-4">
+                  <div className="flex justify-between">
+                    <span className="mr-2 mt-1">
+                      <AiFillLinkedin />
+                    </span>
+                    <span>View Linkedin</span>
+                  </div>
+                </button>
+              </Link>
+            </div>
 
-            <Link href={"https://github.com/renmission"} target="_blank">
-              <button className="bg-transparent hover:bg-teal-500 text-teal-700 font-semibold hover:text-white py-2 px-4 border border-teal-500 hover:border-transparent rounded">
-                <div className="flex justify-between">
-                  <span className="mr-2 mt-1">
-                    <AiFillGithub />{" "}
-                  </span>
-                  <span>View GitHub</span>
-                </div>
-              </button>
-            </Link>
+            <div className="py-2">
+              <Link href={"https://github.com/renmission"} target="_blank">
+                <button className="bg-transparent hover:bg-teal-500 text-teal-700 font-semibold hover:text-white px-16 py-4 sm:py-2 sm:px-4 border border-teal-500 hover:border-transparent rounded">
+                  <div className="flex justify-between px-1">
+                    <span className="mr-2 mt-1 pl-1">
+                      <AiFillGithub />
+                    </span>
+                    <span>View GitHub</span>
+                  </div>
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
 
