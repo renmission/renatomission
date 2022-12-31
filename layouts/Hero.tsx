@@ -56,7 +56,7 @@ const Hero = () => {
                 href={"https://www.linkedin.com/in/renmission/"}
                 target="_blank"
               >
-                <button className="bg-teal-500 hover:bg-teal-600 text-white font-bold px-16 py-4 sm:py-2 sm:px-4 rounded mr-4">
+                <button className="bg-teal-500 hover:bg-teal-600 text-white font-bold px-10 py-4 sm:py-2 sm:px-4 rounded mr-4">
                   <div className="flex justify-between">
                     <span className="mr-2 mt-1">
                       <AiFillLinkedin />
@@ -71,7 +71,7 @@ const Hero = () => {
 
             <div className="py-2">
               <Link href={"https://github.com/renmission"} target="_blank">
-                <button className="bg-transparent font-semibold text-white px-16 py-4 sm:py-2 sm:px-4 border border-teal-500 hover:bg-teal-500  rounded">
+                <button className="bg-transparent font-semibold text-white px-10 py-4 sm:py-2 sm:px-4 border border-teal-500 hover:bg-teal-500  rounded">
                   <div className="flex justify-between px-1 hover:text-white">
                     <span className="mr-2 mt-1 pl-1  to-emerald-400 ">
                       <AiFillGithub />
