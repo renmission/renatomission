@@ -55,8 +55,8 @@ const Portfolio = () => {
         <div className="row justify-center">
           <div className="w-full">
             <div className="section_title pb-6 text-center text-white">
-              <h2 className="text-4xl pb-4 font-semibold text-center">Projects</h2>
-              <h3 className="main_title">
+              <h2 className="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl text-white">Projects</h2>
+              <h3 className="mb-6 text-lg font-normal text-gray-200 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
                 Some of the side projects I&apos;m currently working on:
               </h3>
             </div>

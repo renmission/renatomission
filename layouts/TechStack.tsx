@@ -62,10 +62,10 @@ const TechStack = () => {
         <div className="row justify-center pb-12">
           <div className="w-full">
             <div className="section_title pb-6 text-center text-white">
-              <h2 className="text-4xl pb-4 font-semibold text-center">
+              <h2 className="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl text-white">
                 My Technology Stack
               </h2>
-              <h3 className="main_title">
+              <h3 className="mb-6 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
                 My preferred weapons of choice
               </h3>
             </div>
