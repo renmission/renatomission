@@ -52,9 +52,9 @@ const Portfolio = () => {
   return (
     <section id="portfolio" className="py-16">
       <div className="container">
-        <div className="row justify-center pb-12">
+        <div className="row justify-center">
           <div className="w-full">
-            <div className="section_title pb-6 text-center">
+            <div className="section_title pb-6 text-center text-white">
               <h2 className="text-4xl pb-4 font-semibold text-center">Projects</h2>
               <h3 className="main_title">
                 Some of the side projects I&apos;m currently working on:
@@ -64,11 +64,11 @@ const Portfolio = () => {
         </div>
 
         <section className="grid gap-12 sm:grid-cols-3 py-16">
-          <div className="col-span-2 sm:col-span-1">
+          <div className="col-span-2 sm:col-span-1 hidden sm:block">
             <Image src={web3} alt="web3" className="rounded" />
           </div>
           <div className="sm:col-span-2">
-            <h2 className="text-3xl font-semibold pb-6">
+            <h2 className="text-3xl font-semibold pb-6 text-white">
               Web3 Exchange Tracker
             </h2>
             <p className="text-xl pb-3 leading-8 max-w-4xl text-gray-300">
@@ -90,7 +90,7 @@ const Portfolio = () => {
               </Link>
             </div>
 
-            <div className="grid grid-cols-2 gap-4 py-4 ">
+            <div className="grid grid-cols-2 gap-6 sm:gap-4 py-4 text-white">
               <div className="flex flex-row">
                 <span className="text-2xl pr-2 text-teal-400">
                   <AiFillCheckCircle />
@@ -119,9 +119,9 @@ const Portfolio = () => {
 
             <div className="py-2">
               <Link href={"https://github.com/renmission"} target="_blank">
-                <button className="bg-transparent font-semibold text-white px-16 py-4 sm:py-2 sm:px-4 border border-teal-500 hover:bg-teal-500 rounded">
+                <button className="bg-transparent font-semibold text-white px-10 py-4 sm:py-2 sm:px-4 border border-teal-500 hover:bg-teal-500 rounded">
                   <div className="flex justify-between px-1 hover:text-white">
-                    <span className="mr-2 mt-1 pl-1  to-emerald-400 ">
+                    <span className="mr-2 mt-1 pl-1">
                       <BiLinkExternal />
                     </span>
                     <span>View Demo</span>
@@ -133,10 +133,9 @@ const Portfolio = () => {
           </div>
         </section>
 
-
         <section className="grid gap-12 sm:grid-cols-3 py-16">
           <div className="sm:col-span-2">
-            <h2 className="text-3xl font-semibold pb-6">
+            <h2 className="text-3xl font-semibold pb-6 text-white">
               Web3 Exchange Tracker
             </h2>
             <p className="text-xl pb-3 leading-8 max-w-4xl text-gray-300">
@@ -158,7 +157,7 @@ const Portfolio = () => {
               </Link>
             </div>
 
-            <div className="grid grid-cols-2 gap-4 py-4 ">
+            <div className="grid grid-cols-2 gap-4 py-4 text-white">
               <div className="flex flex-row">
                 <span className="text-2xl pr-2 text-teal-400">
                   <AiFillCheckCircle />
@@ -187,9 +186,9 @@ const Portfolio = () => {
 
             <div className="py-2">
               <Link href={"https://github.com/renmission"} target="_blank">
-                <button className="bg-transparent font-semibold text-white px-16 py-4 sm:py-2 sm:px-4 border border-teal-500 hover:bg-teal-500 rounded">
+                <button className="bg-transparent font-semibold text-white px-10 py-4 sm:py-2 sm:px-4 border border-teal-500 hover:bg-teal-500 rounded">
                   <div className="flex justify-between px-1 hover:text-white">
-                    <span className="mr-2 mt-1 pl-1  to-emerald-400 ">
+                    <span className="mr-2 mt-1 pl-1">
                       <BiLinkExternal />
                     </span>
                     <span>View Demo</span>
@@ -199,17 +198,17 @@ const Portfolio = () => {
             </div>
             
           </div>
-          <div className="col-span-2 sm:col-span-1">
+          <div className="col-span-3 sm:col-span-1 hidden sm:block">
             <Image src={web4} alt="web4" className="rounded" />
           </div>
         </section>
 
          <section className="grid gap-12 sm:grid-cols-3 py-16">
-          <div className="col-span-2 sm:col-span-1">
+          <div className="col-span-2 sm:col-span-1 hidden sm:block">
             <Image src={web5} alt="web5" className="rounded" />
           </div>
           <div className="sm:col-span-2">
-            <h2 className="text-3xl font-semibold pb-6">
+            <h2 className="text-3xl font-semibold pb-6 text-white">
               Web3 Exchange Tracker
             </h2>
             <p className="text-xl pb-3 leading-8 max-w-4xl text-gray-300">
@@ -231,7 +230,7 @@ const Portfolio = () => {
               </Link>
             </div>
 
-            <div className="grid grid-cols-2 gap-4 py-4 ">
+            <div className="grid grid-cols-2 gap-4 py-4 text-white">
               <div className="flex flex-row">
                 <span className="text-2xl pr-2 text-teal-400">
                   <AiFillCheckCircle />
@@ -260,9 +259,9 @@ const Portfolio = () => {
 
             <div className="py-2">
               <Link href={"https://github.com/renmission"} target="_blank">
-                <button className="bg-transparent font-semibold text-white px-16 py-4 sm:py-2 sm:px-4 border border-teal-500 hover:bg-teal-500 rounded">
+                <button className="bg-transparent font-semibold text-white px-10 py-4 sm:py-2 sm:px-4 border border-teal-500 hover:bg-teal-500 rounded">
                   <div className="flex justify-between px-1 hover:text-white">
-                    <span className="mr-2 mt-1 pl-1  to-emerald-400 ">
+                    <span className="mr-2 mt-1 pl-1">
                       <BiLinkExternal />
                     </span>
                     <span>View Demo</span>

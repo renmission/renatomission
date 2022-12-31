@@ -6,7 +6,7 @@ import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 const Hero = () => {
   return (
     <>
-      <section className="grid grid-cols-3 gap-4 md:py-16" id="about">
+      <section className="min-h-screen grid grid-cols-3 gap-4 md:py-16" id="about">
         <div className="py-5 pr-6 col-span-6 lg:col-span-4 lg:col-start-1 lg:col-end-4 ">
           <h2 className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400 py-2 leading-10 text-teal-400 font-bold text-4xl sm:text-5xl">
             Hello! I&apos;m Ren, a developer based in Philippines.
@@ -18,7 +18,7 @@ const Hero = () => {
             <span className="text-teal-400"> delightful </span>.
           </p>
 
-          <p className="text-xl pb-3  leading-8 md:text-xl max-w-4xl text-white">
+          <p className="text-xl pb-3 leading-8 md:text-xl max-w-4xl text-white ">
             I&apos;m a Computer Science graduate, A self-taught developer and
             enthusiast. Where I learn the fundamentals of
             <span className="text-teal-400"> front-end </span> and

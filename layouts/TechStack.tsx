@@ -61,7 +61,7 @@ const TechStack = () => {
       <div className="container">
         <div className="row justify-center pb-12">
           <div className="w-full">
-            <div className="section_title pb-6 text-center">
+            <div className="section_title pb-6 text-center text-white">
               <h2 className="text-4xl pb-4 font-semibold text-center">
                 My Technology Stack
               </h2>
