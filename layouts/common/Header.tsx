@@ -3,8 +3,8 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <div>
-      <section className="py-10 pb-2">
+    <div className="w-5/6 mx-auto">
+      <section className="py-10 pb-2 items-center">
         <nav className="text-center mb-6 flex flex-col sm:justify-between sm:flex-row sm:flex-wrap">
           <div className="text-4xl font-bold text-white py-4 sm:py-2">
             <h1>
@@ -18,8 +18,8 @@ const Header = () => {
               target="_blank"
               legacyBehavior
             >
-              <a className="bg-gradient-to-r to-emerald-600 from-sky-400 text-white px-16 py-4 font-semibold rounded-md ml-5 sm:px-6 sm:py-2">
-                Hire me?
+              <a className="bg-gradient-to-r to-emerald-600 from-sky-400 text-white px-16 py-4 font-semibold rounded-md ml-5 sm:px-6 sm:py-3">
+                Download CV
               </a>
             </Link>
           </div>

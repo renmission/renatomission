@@ -6,7 +6,7 @@ import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 const Hero = () => {
   return (
     <>
-      <section className="min-h-screen grid grid-cols-3 gap-4 md:py-16" id="about">
+      <section className="min-h-screen grid grid-cols-3 gap-4 md:py-16 w-5/6 mx-auto" id="about">
         <div className="py-5 pr-6 col-span-6 lg:col-span-4 lg:col-start-1 lg:col-end-4 ">
           <h2 className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400 py-2 leading-10 text-teal-400 font-extrabold text-4xl md:text-5xl lg:text-6xl">
             Hello! I&apos;m Ren, a developer based in Philippines.

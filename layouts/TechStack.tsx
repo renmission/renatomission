@@ -57,8 +57,8 @@ const TechStack = () => {
   ];
 
   return (
-    <section id="tech" className="py-16">
-      <div className="container">
+    <section id="tech" className="py-16 w-5/6 mx-auto">
+
         <div className="row justify-center pb-12">
           <div className="w-full">
             <div className="section_title pb-6 text-center text-white">
@@ -87,7 +87,7 @@ const TechStack = () => {
             </div>
           ))}
         </div>
-      </div>
+    
     </section>
   );
 };

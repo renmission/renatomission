@@ -3,7 +3,7 @@ import Link from "next/link";
 const GetInTouch = () => {
   return (
     <>
-      <section className="pt-16">
+      <section className="pt-16 w-5/6 mx-auto" id="getIntouch">
         <div className="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl text-white">
           <h2>Get in touch</h2>
         </div>
