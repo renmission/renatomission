@@ -228,14 +228,14 @@ const Portfolio = () => {
         </section> */}
 
       <div className="py-16">
-        <div className="w-1/3 mx-auto">
-          <div className="pb-6 text-center text-white ">
+        <div className="max-w-7xl md:w-1/3 mx-auto">
+          
             <Link href={"#getIntouch"}>
-              <h2 className="mb-4 text-2xl font-extrabold tracking-normal leading-none text-white p-4 cursor-pointer hover:bg-teal-500 transition ease-in-out delay-150 border border-teal-500 rounded-lg">
+              <h2 className="text-2xl text-center font-semibold p-4 text-white cursor-pointer hover:bg-teal-500 transition ease-in-out delay-150 border border-teal-500 rounded-lg">
                 More, Let&apos;s Talk
               </h2>
             </Link>
-          </div>
+          
         </div>
       </div>
     </section>
