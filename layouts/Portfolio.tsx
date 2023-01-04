@@ -12,7 +12,7 @@ import { AiFillCheckCircle, AiFillGithub } from "react-icons/ai";
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className="py-16 w-5/6 mx-auto">
+    <section id="portfolio" className="py-16 lg:w-5/6 mx-auto">
       <div className="row justify-center">
         <div className="w-full">
           <div className="section_title pb-6 text-center text-white">
