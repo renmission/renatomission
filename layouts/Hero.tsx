@@ -38,12 +38,12 @@ const Hero = () => {
             I&apos;m currently looking for a new role as a developer.
             <Link
               href={
-                "https://drive.google.com/file/d/1Sjv2D1y0Wt8LZp2LqNyZJ-qsg34CxIUS/view?usp=share_link"
+                "https://drive.google.com/file/d/1JvH_ZgyFGmfu62IwvOXkkmYfT8AKktxO/view?usp=share_link"
               }
               target="_blank"
               legacyBehavior
             >
-              <span className="border h-16 rounded-[50%] py-2 px-1 border-teal-400 sm:ml-4">
+              <span className="border h-16 rounded-[50%] py-2 px-1 border-teal-400 sm:ml-4 cursor-pointer">
                 <span className="font-semibold"> Hire me</span>
                 <span className="font-semibold italic ">?</span>
               </span>
