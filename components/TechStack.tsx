@@ -63,7 +63,7 @@ const TechStack = () => {
           <div className="w-full">
             <div className="section_title pb-6 text-center">
               <h2 className="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl text-black">
-                My Technology Stack
+                Tech Stack
               </h2>
               <h3 className="mb-6 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-600">
                 My preferred weapons of choice
