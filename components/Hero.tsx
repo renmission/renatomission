@@ -8,7 +8,7 @@ const Hero = () => {
     <>
       <section className="min-h-screen grid grid-cols-3 gap-4 md:py-16 lg:w-5/6 mx-auto">
         <div className="py-5 lg:pr-6 col-span-6 lg:col-span-4 lg:col-start-1 lg:col-end-4 ">
-          <h2 className="text-transparent bg-clip-text py-2 leading-10 text-black font-extrabold text-4xl md:text-5xl lg:text-6xl">
+          <h2 className="text-black py-2 font-extrabold text-4xl md:text-5xl lg:text-6xl">
             Hello! I&apos;m Ren, a developer based in Philippines.
           </h2>
 
