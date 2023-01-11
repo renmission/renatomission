@@ -83,7 +83,7 @@ const Portfolio = () => {
               {project.excerpt}
             </p>
             <div className="py-2">
-              <Link href="https://github.com/renmission/jott" legacyBehavior>
+              <Link href={project.githubLink} legacyBehavior>
                 <a
                   className="text-gray-600 hover:text-blue-700 transition-all ease-in-out"
                   target="_blank"
@@ -110,7 +110,7 @@ const Portfolio = () => {
             </div>
 
             <div className="py-6">
-              <Link href={'https://jott-eight.vercel.app/'} target="_blank">
+              <Link href={project.demoLink} target="_blank">
                 <button className="text-md text-center font-semibold py-3 px-6 text-black hover:text-white cursor-pointer hover:bg-blue-700 transition ease-in-out delay-150 border border-blue-700 rounded">
                   <div className="flex items-center">
                     <span className="mr-2">
