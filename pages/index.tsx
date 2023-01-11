@@ -1,10 +1,10 @@
-import Footer from "../layouts/common/Footer";
-import TechStack from "../layouts/TechStack";
-import Portfolio from "../layouts/Portfolio";
-import Hero from "../layouts/Hero";
-import AppContainer from "../layouts/AppContainer";
-import Header from "../layouts/common/Header";
-import GetInTouch from "../layouts/GetInTouch";
+import Footer from "../components/common/Footer";
+import TechStack from "../components/TechStack";
+import Portfolio from "../components/Portfolio";
+import Hero from "../components/Hero";
+import AppContainer from "../components/AppContainer";
+import Header from "../components/common/Header";
+import GetInTouch from "../components/GetInTouch";
 
 export default function Home() {
   return (

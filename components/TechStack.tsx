@@ -61,11 +61,11 @@ const TechStack = () => {
 
         <div className="row justify-center pb-12">
           <div className="w-full">
-            <div className="section_title pb-6 text-center text-white">
-              <h2 className="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl text-white">
+            <div className="section_title pb-6 text-center">
+              <h2 className="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl text-black">
                 My Technology Stack
               </h2>
-              <h3 className="mb-6 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
+              <h3 className="mb-6 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-600">
                 My preferred weapons of choice
               </h3>
             </div>
@@ -80,7 +80,6 @@ const TechStack = () => {
               <Image
                 src={src}
                 alt={title}
-                onMouseOver={() => setShowTitle(!showTitle)}
                 className="rounded-lg object-cover"
                 layout="responsive"
               />
