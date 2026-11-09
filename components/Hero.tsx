@@ -1,102 +1,76 @@
-import Image from "next/legacy/image";
-import me from "../public/me.jpg";
-import Link from "next/link";
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import Image from 'next/image';
+import type { CSSProperties } from 'react';
+import me from '../public/me.jpg';
+import { site } from '../lib/site';
+import ManilaClock from './ManilaClock';
+import PointerArea from './PointerArea';
+import Shapes from './Shapes';
+import Typewriter from './Typewriter';
 
-const Hero = () => {
+const delay = (s: number) => ({ '--delay': `${s}s` }) as CSSProperties;
+const roles = ['Software developer.', 'AI automation.', 'Claude Code.', 'n8n workflows.', 'Hermes Agent.', 'DevOps.', 'Deployments.', 'Funnel design.', 'CRM.', 'GoHighLevel.', 'Social media.'];
+const facts = ['Computer Science graduate', 'AI & automation', 'Funnels & CRM', 'Cross-time-zone teams'];
+
+export default function Hero() {
   return (
-    <>
-      <section className="min-h-screen grid grid-cols-3 gap-4 md:py-16 lg:w-5/6 mx-auto">
-        <div className="py-5 lg:pr-6 col-span-6 lg:col-span-4 lg:col-start-1 lg:col-end-4 ">
-          <h2 className="text-black py-2 font-extrabold text-4xl md:text-5xl lg:text-6xl">
-            Hello! I&apos;m Ren, a developer based in Philippines.
-          </h2>
+    <PointerArea className="relative overflow-hidden">
+      <section id="top" aria-labelledby="hero-title" className="relative flex min-h-[100svh] flex-col items-center justify-center px-4 pb-24 pt-32 text-center">
+        <div aria-hidden className="grid-bg absolute inset-0" />
+        <Shapes />
 
-          <p className="text-xl pt-5 pb-3 leading-8 md:text-xl max-w-4xl text-gray-600 ">
-            I love building tools that are
-            <span className="text-blue-700 "> user-friendly, simple, </span> and
-            <span className="text-blue-700 "> delightful </span>.
-          </p>
+        <p className="pop-in relative inline-flex items-center gap-2.5 rounded-md border border-line bg-surface/85 px-4 py-2 text-sm font-medium text-muted backdrop-blur" style={delay(0)}>
+          <span className="relative flex size-2" aria-hidden>
+            <span className="absolute inset-0 animate-ping rounded-full bg-emerald-500 opacity-70 motion-reduce:animate-none" />
+            <span className="relative size-2 rounded-full bg-emerald-500" />
+          </span>
+          Open to new roles
+          <span aria-hidden className="h-3.5 w-px bg-line" />
+          <ManilaClock />
+        </p>
 
-          <p className="text-xl pb-3 leading-8 md:text-xl max-w-4xl text-gray-600  ">
-            I&apos;m a Computer Science graduate, A self-taught developer and
-            enthusiast. Where I learn the fundamentals of
-            <span className="text-blue-700 "> front-end </span> and
-            <span className="text-blue-700 "> back-end web development</span>.
-          </p>
+        <h1 id="hero-title" className="relative mt-8 max-w-6xl font-display text-[clamp(2.6rem,9vw,7.25rem)] font-black leading-[0.92] tracking-[-0.04em] [font-stretch:115%]">
+          <span className="pop-in block" style={delay(0.1)}>
+            Hi, I&apos;m{' '}
+            <span className="relative inline-block size-[0.82em] overflow-hidden rounded-[0.16em] border-[0.05em] border-surface align-[-0.06em] shadow-[0_14px_30px_-10px_rgba(13,27,42,0.6)]">
+              <Image src={me} alt="Portrait of Renato Mission" fill priority sizes="140px" className="object-cover" placeholder="blur" />
+            </span>{' '}
+            Ren.
+          </span>
+          <span className="pop-in mt-3 block bg-gradient-to-r from-steel via-cobalt to-cobalt-deep bg-clip-text pb-[0.06em] text-transparent dark:from-[#C9D3DF] dark:via-cobalt dark:to-[#7FA6FF]" style={delay(0.25)}>
+            <Typewriter phrases={roles} />
+          </span>
+        </h1>
 
-          <p className="text-xl pb-3  leading-8 md:text-xl max-w-4xl text-gray-600 ">
-            Through the years of my experience, I have the opportunity to work
-            with both small and large, specialised and cross-functionial teams
-            accross different time zones and developed a working style that
-            leans towards <span className="text-blue-700">flexibility</span>,
-            <span className="text-blue-700">clarity</span>, and
-            <span className="text-blue-700"> collaboration</span>.
-          </p>
+        <p className="pop-in relative mt-8 max-w-[46ch] text-lg text-muted md:text-xl" style={delay(0.4)}>
+          I&apos;m Renato Mission, a software developer in the Philippines who builds with AI. I make business web apps and AI automations with Claude, n8n and Hermes Agent, deploy on Vercel and AWS, design funnels, run CRMs like GoHighLevel and manage social media.
+        </p>
 
-          <p className="text-xl pb-3  leading-8 md:text-xl max-w-4xl text-gray-700 ">
-            I&apos;m currently looking for a new role as a developer.
-            <Link
-              href={
-                "https://drive.google.com/file/d/1JvH_ZgyFGmfu62IwvOXkkmYfT8AKktxO/view?usp=share_link"
-              }
-              target="_blank"
-              legacyBehavior
-            >
-              <span className="border h-16 rounded-[50%] py-2 px-1 border-blue-700 sm:ml-4 cursor-pointer">
-                <span className="font-semibold"> Hire me</span>
-                <span className="font-semibold italic ">?</span>
-              </span>
-            </Link>
-          </p>
-
-          <div className="py-5 flex flex-col sm:flex-row sm:flex-wrap">
-            <div className="py-2">
-              <Link
-                href={"https://www.linkedin.com/in/renmission/"}
-                target="_blank"
-              >
-                <button className="bg-blue-700 hover:bg-blue-600 text-white font-bold px-10 py-4 sm:py-2 sm:px-4 rounded mr-4">
-                  <div className="flex justify-between">
-                    <span className="mr-2 mt-1">
-                      <AiFillLinkedin />
-                    </span>
-                    <span>View Linkedin</span>
-                  </div>
-                </button>
-              </Link>
-            </div>
-            
-            
-
-            <div className="py-2">
-              <Link href={"https://github.com/renmission"} target="_blank">
-                <button className="bg-transparent font-semibold text-gray-700 px-10 py-4 sm:py-2 sm:px-4 border border-blue-700 hover:bg-blue-700  rounded hover:text-white">
-                  <div className="flex justify-between px-1">
-                    <span className="mr-2 mt-1 pl-1">
-                      <AiFillGithub />
-                    </span>
-                    <span>View GitHub</span>
-                  </div>
-                </button>
-              </Link>
-            </div>
-          </div>
+        <div className="pop-in relative mt-10 flex flex-wrap justify-center gap-3" style={delay(0.55)}>
+          <a href="#work" className="btn bg-ink text-bg shadow-[0_14px_28px_-12px_rgba(13,27,42,0.7)] hover:bg-cobalt hover:text-white">
+            View my work
+          </a>
+          <a href={site.resume} target="_blank" rel="noopener noreferrer" className="btn border border-ink/30 bg-surface hover:border-ink">
+            Download résumé
+          </a>
         </div>
 
-        <div className="relative rounded-md w-72 h-96 mt-5 overflow-hidden hidden lg:block col-end-7 col-span-2">
-          <Image
-            src={me}
-            alt="ren mission"
-            layout="fill"
-            objectFit="cover"
-            className="object-contain"
-          />
-        </div>
+        <ul className="pop-in relative mt-12 flex flex-wrap justify-center gap-x-8 gap-y-3 text-sm font-medium text-muted" style={delay(0.7)}>
+          {facts.map((f) => (
+            <li key={f} className="flex items-center gap-2">
+              <svg viewBox="0 0 20 20" className="size-4 text-brass" fill="currentColor" aria-hidden>
+                <path fillRule="evenodd" clipRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.7-9.3a1 1 0 00-1.4-1.4L9 10.6 7.7 9.3a1 1 0 00-1.4 1.4l2 2a1 1 0 001.4 0l4-4z" />
+              </svg>
+              {f}
+            </li>
+          ))}
+        </ul>
+
+        <a href="#about" aria-label="Scroll to about" className="bob absolute bottom-7 left-1/2 -translate-x-1/2 rounded-md border border-line p-2 text-muted hover:text-ink">
+          <svg viewBox="0 0 24 24" className="size-5" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" aria-hidden>
+            <path d="M12 5v14M6 13l6 6 6-6" />
+          </svg>
+        </a>
       </section>
-
-    </>
+    </PointerArea>
   );
-};
-
-export default Hero;
+}
