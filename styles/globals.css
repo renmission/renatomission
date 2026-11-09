@@ -175,8 +175,9 @@
   from { transform: rotateX(-22deg) rotateY(0deg); }
   to { transform: rotateX(-22deg) rotateY(360deg); }
 }
+/* No opacity fade: hidden hero text would delay LCP and Speed Index. */
 @keyframes pop-in {
-  from { opacity: 0; transform: translateY(18px); }
+  from { transform: translateY(18px); }
 }
 @keyframes bob {
   50% { transform: translateY(6px); }
@@ -188,7 +189,7 @@
   to { transform: translate(var(--sx), var(--sy)) rotate(var(--sr)) scale(0.8); opacity: 0.2; }
 }
 @keyframes word-in {
-  from { opacity: 0.15; }
+  from { opacity: 0.55; } /* stays >= 3:1 contrast for large text */
   to { opacity: 1; }
 }
 @keyframes grow-x {
