@@ -1,0 +1,32 @@
+# Renato Mission
+
+> Renato (Ren) Mission is a software developer based in the Philippines (UTC+8) who builds web apps and management systems for small businesses: online ordering, point of sale (POS), inventory, payroll and membership tools. Computer Science graduate. Also builds AI and workflow automations (n8n, Claude, Claude Code, MCP), deploys on Vercel, AWS, Supabase and Neon, and sets up funnels and CRM with GoHighLevel. Open to client projects and developer roles.
+
+- Email: renato.jr.mission@gmail.com
+- Site: https://renatomission.vercel.app
+- GitHub: https://github.com/renmission
+- LinkedIn: https://www.linkedin.com/in/renmission/
+- Résumé: https://drive.google.com/file/d/1JvH_ZgyFGmfu62IwvOXkkmYfT8AKktxO/view?usp=share_link
+
+## Services
+
+- Business web apps and management systems: online ordering, point of sale (POS), inventory, payroll, membership and reporting
+- AI and workflow automation: n8n workflows, Claude, Claude Code, MCP
+- Deployment and hosting: Vercel, AWS, Supabase, Neon
+- Funnels, CRM (GoHighLevel) and social media management
+
+## Skills
+
+- Front end: HTML, CSS, JavaScript, TypeScript, React, Next.js, Tailwind CSS
+- Back end: Node.js, PostgreSQL, Prisma, Drizzle ORM, GraphQL, MongoDB
+- DevOps & cloud: Vercel, AWS, Supabase, Neon, Deployments
+- AI & automation: Claude, Claude Code, ChatGPT, Perplexity, MCP, n8n, Hermes Agent
+- Marketing: Funnel design, CRM, GoHighLevel, Social media management
+
+## Projects
+
+- [Selah](https://selah-smoky-rho.vercel.app): Website and shop tools for a specialty coffee house in Tanauan, Batangas: online menu and pickup ordering, plus a staff area with a live order board, counter POS and a digital stamp card. Next.js, React, TypeScript, Tailwind CSS, Supabase. Code: https://github.com/renmission/selah
+- Winner Church: A church website with a full management system behind it: members and families, finances and online giving, events with RSVP, duty and worker scheduling, school enrollment and grades, documents, a page builder and custom reports. Next.js, TypeScript, Tailwind CSS, Prisma, Neon Postgres, Stripe.
+- [ADS Paint Center](https://ads-paint-center.vercel.app): An online shop and management system for a paint retailer in Sto. Tomas, Batangas: product catalog and quotes for customers, plus POS and billing, inventory with low-stock alerts, staff roles, reports and automatic SMS notifications. Next.js, TypeScript, Tailwind CSS, Drizzle ORM, Neon Postgres, SMS API. Code: https://github.com/renmission/ads-paint-center
+- Feedback workflow automation: An n8n workflow that runs a customer feedback loop: it logs sent and incoming feedback emails from Gmail into Google Sheets, sends follow-ups to customers who haven't replied, asks happy customers for a Google review, and tracks which reviews come in. New 5-star feedback triggers a review request in real time. n8n, Gmail API, Google Sheets, JavaScript.
+- [FG Homes](https://fg-homes-builders.vercel.app): An internal management platform for a home builder and construction supplier: inventory, payroll and delivery tracking, behind role-based sign-in. Next.js, TypeScript, Tailwind CSS, Drizzle ORM, Neon Postgres. Code: https://github.com/renmission/fg-home

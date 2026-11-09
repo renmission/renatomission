@@ -1,142 +1,55 @@
-import Link from 'next/link';
 import Image from 'next/image';
-import cabrinimed from '../public/cabrinimed.png';
-import jott from '../public/jott.png';
-import mediumClone from '../public/mediumClone.png';
-import median from '../public/median.png';
-import web5 from '../public/web5.png';
-import web6 from '../public/web6.png';
-import { BiLink, BiLinkExternal } from 'react-icons/bi';
-import me from '../public/me.jpg';
-import { AiFillCheckCircle, AiFillGithub } from 'react-icons/ai';
+import { projects } from '../lib/site';
+import PointerArea from './PointerArea';
 
-interface PortfolioProps {
-  id: number;
-  src: any;
-  title: string;
-  excerpt: string;
-  stack: string[];
-  githubLink: string;
-  demoLink: string;
-}
+const accents = ['bg-cobalt', 'bg-brass', 'bg-steel'];
 
-const Portfolio = () => {
-  const Portfolio: PortfolioProps[] = [
-    {
-      id: 1,
-      src: median,
-      title: 'Median',
-      excerpt: 'Blog application with Content Management system',
-      stack: ['React', 'GraphQL', 'GraphQL', 'TailwindCSS'],
-      githubLink: 'https://github.com/renmission/median-blog',
-      demoLink: 'https://median-blog.vercel.app/',
-    },
-    {
-      id: 3,
-      src: mediumClone,
-      title: 'Medium Clone',
-      excerpt: 'Medium website clone.',
-      stack: ['React', 'TailwindCSS', 'TypeScript', 'Sanity'],
-      githubLink: 'https://github.com/renmission/medium-clone',
-      demoLink: '/#',
-    },
-    {
-      id: 3,
-      src: jott,
-      title: 'Jott - Note Taking App',
-      excerpt: 'Advanced Note taking application.',
-      stack: ['React', 'React Bootstrap', 'TypeScript'],
-      githubLink: 'https://github.com/renmission/jott',
-      demoLink: 'https://jott-eight.vercel.app/',
-    },
-  ];
-
+// Cards are sticky at staggered offsets, so each one slides over the last as you scroll.
+export default function Portfolio() {
   return (
-    <section id="portfolio" className="py-16 lg:w-5/6 mx-auto">
-      <div className="row justify-center">
-        <div className="w-full">
-          <div className="section_title pb-6 text-center text-white">
-            <h2 className="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl text-black">
-              Projects
-            </h2>
-            <h3 className="mb-6 text-lg font-normal text-gray-200 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-600">
-              Some of the side projects I&apos;m currently working on:
-            </h3>
-          </div>
-        </div>
-      </div>
+    <section id="work" aria-labelledby="work-title" className="mx-auto max-w-page px-4 py-24 sm:px-8 md:py-32">
+      <h2 id="work-title" className="h2">
+        Selected work
+      </h2>
+      <p className="mt-4 max-w-[48ch] text-lg text-muted">Web apps and automations I&apos;ve built for small businesses in the Philippines, with live demos and source code where they&apos;re public.</p>
 
-      {Portfolio.map((project) => (
-        <section key={project.id} className="grid gap-12 sm:grid-cols-3 py-16">
-          <div className="col-span-2 sm:col-span-1 sm:block">
-            <Image
-              src={project.src}
-              alt={project.title}
-              className="rounded shadow-lg"
-            />
-          </div>
-          <div className="sm:col-span-2">
-            <h2 className="text-3xl font-semibold pb-6 text-black">
-              {project.title}
-            </h2>
-            <p className="text-xl pb-3 leading-8 max-w-full text-gray-600">
-              {project.excerpt}
-            </p>
-            <div className="py-2">
-              <Link href={project.githubLink} legacyBehavior>
-                <a
-                  className="text-gray-600 hover:text-blue-700 transition-all ease-in-out"
-                  target="_blank"
-                >
-                  <div className="flex flex-row">
-                    <span className="text-2xl">
-                      <BiLink />
-                    </span>
-                    <span className="text-xl"> Github Repo</span>
-                  </div>
-                </a>
-              </Link>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-4 py-2 mt-2 text-gray-600">
-              {project.stack.map((item, index) => (
-                <div key={index} className="flex flex-row">
-                  <span className="text-xl pr-2 text-blue-700">
-                    <AiFillCheckCircle />
-                  </span>
-                  <span className="text-xl">{item}</span>
+      <ul className="mt-14">
+        {projects.map((p, i) => (
+          <li key={p.title} className="sticky pb-10 md:pb-16" style={{ top: `calc(6rem + ${i * 1.25}rem)` }}>
+            <article className="relative grid items-center gap-8 overflow-hidden rounded-2xl border border-navy-3 bg-gradient-to-br from-navy-2 to-navy p-6 text-[#E6EAF0] shadow-[0_40px_70px_-35px_rgba(13,27,42,0.8)] sm:p-10 md:grid-cols-12 md:gap-12 md:p-12">
+              <span aria-hidden className={`absolute inset-x-0 top-0 h-1 ${accents[i % accents.length]}`} />
+              <div className="md:col-span-5">
+                <h3 className="font-display text-3xl font-extrabold tracking-tight [font-stretch:115%] md:text-[2.75rem] md:leading-none">{p.title}</h3>
+                <p className="mt-4 text-lg text-[#B8C4D3]">{p.summary}</p>
+                <ul className="mt-6 flex flex-wrap gap-2" aria-label="Built with">
+                  {p.stack.map((s) => (
+                    <li key={s} className="rounded-md border border-white/15 bg-white/5 px-3 py-1 text-sm font-medium">
+                      {s}
+                    </li>
+                  ))}
+                </ul>
+                <div className="mt-8 flex flex-wrap gap-3">
+                  {p.demo && (
+                    <a href={p.demo} target="_blank" rel="noopener noreferrer" className="btn bg-cobalt text-white hover:bg-cobalt-deep">
+                      Visit live site<span className="sr-only">: {p.title}</span>
+                    </a>
+                  )}
+                  {p.repo && (
+                    <a href={p.repo} target="_blank" rel="noopener noreferrer" className="btn border border-white/25 hover:border-white">
+                      Read the code<span className="sr-only">: {p.title}</span>
+                    </a>
+                  )}
                 </div>
-              ))}
-            </div>
-
-            <div className="py-6">
-              <Link href={project.demoLink} target="_blank">
-                <button className="text-md text-center font-semibold py-3 px-6 text-black hover:text-white cursor-pointer hover:bg-blue-700 transition ease-in-out delay-150 border border-blue-700 rounded">
-                  <div className="flex items-center">
-                    <span className="mr-2">
-                      <BiLinkExternal />
-                    </span>
-                    <span>View Demo</span>
-                  </div>
-                </button>
-              </Link>
-            </div>
-          </div>
-        </section>
-      ))}
-
-    
-      <div className="py-16">
-        <div className="max-w-7xl md:w-1/3 mx-auto">
-          <Link href={'#getIntouch'}>
-            <h2 className="text-2xl text-center font-semibold p-4 text-black hover:text-white cursor-pointer hover:bg-blue-700 transition ease-in-out delay-150 border border-blue-700 rounded">
-              More, Let&apos;s Talk
-            </h2>
-          </Link>
-        </div>
-      </div>
+              </div>
+              <PointerArea className="tilt md:col-span-7">
+                <div className="overflow-hidden rounded-xl border border-white/10 bg-white shadow-2xl">
+                  <Image src={p.image} alt={`Screenshot of ${p.title}`} sizes="(min-width: 768px) 50vw, 100vw" placeholder="blur" className={`w-full ${p.contain ? 'h-auto' : 'aspect-[16/10] object-cover object-top'}`} />
+                </div>
+              </PointerArea>
+            </article>
+          </li>
+        ))}
+      </ul>
     </section>
   );
-};
-
-export default Portfolio;
+}
