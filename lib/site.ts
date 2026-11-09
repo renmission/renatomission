@@ -13,8 +13,7 @@ export const site = {
   role: 'Software Developer & AI Automation Specialist',
   location: 'Philippines',
   email: 'renato.jr.mission@gmail.com',
-  resume:
-    'https://drive.google.com/file/d/1JvH_ZgyFGmfu62IwvOXkkmYfT8AKktxO/view?usp=share_link',
+  resume: '/resume',
   title: 'Renato Mission – Software Developer & AI Automation, Philippines',
   description:
     'Ren Mission, a software developer and AI automation specialist in the Philippines, builds business web apps (ordering, POS, inventory) and n8n workflows.',
@@ -122,4 +121,60 @@ export const faqs = [
     q: 'Does Ren build n8n and AI automations?',
     a: 'Yes. Ren builds n8n workflows that connect Gmail, Google Sheets and other tools. One example is a customer feedback loop that logs feedback emails, sends follow-ups and asks happy customers for a Google review automatically. Ren also works with Claude, Claude Code and MCP.',
   },
+];
+
+// Résumé content for /resume (printed to PDF from the browser).
+export const experience = [
+  {
+    role: 'Software Developer & AI Automation Specialist',
+    org: 'Freelance',
+    period: '2023 – Present',
+    points: [
+      'Build business web apps and management systems for small businesses: online ordering, POS, inventory, payroll and membership.',
+      'Build n8n and AI automations with Claude, Claude Code and MCP; deploy on Vercel, AWS, Supabase and Neon.',
+      'Set up funnels and CRM with GoHighLevel and manage social media for clients.',
+    ],
+  },
+  {
+    role: 'Software Engineer & QA Project Manager',
+    org: 'Cauld & Clark Information Technology Solutions',
+    period: 'Oct 2021 – 2023',
+    points: [
+      'Front-end and back-end development with React, GraphQL, TypeScript, Node.js, NestJS, MongoDB and Docker.',
+      'Led QA: manual testing and Cypress test automation.',
+    ],
+  },
+  {
+    role: 'Software Engineer',
+    org: 'CampaignTracker',
+    period: 'Dec 2021 – 2023',
+    points: ['Front-end development with React, GraphQL and TypeScript.'],
+  },
+  {
+    role: 'QA Engineer',
+    org: 'Fiddle.io',
+    period: 'Jan 2021 – 2023',
+    points: ['Manual and automated testing with Cypress.'],
+  },
+  {
+    role: 'Web Developer / SEO / Graphic Artist',
+    org: 'St. Frances Cabrini Medical Center, Inc.',
+    period: 'Apr 2018 – Jan 2022',
+    points: [
+      'Built and maintained the hospital website with HTML, CSS, JavaScript, Node.js, PHP, MySQL and MongoDB.',
+      'Ran SEO and Google Analytics to grow search traffic.',
+      'Designed web and social media graphics in Photoshop and Illustrator.',
+    ],
+  },
+  {
+    role: 'Web Designer',
+    org: 'Personiv',
+    period: 'Oct 2017 – Jan 2018',
+    points: [],
+  },
+];
+
+export const education = [
+  { school: 'Tanauan Institute', detail: "Bachelor's degree, Computer Science", period: '2012 – 2015' },
+  { school: 'Inventive Media', detail: 'Search Engine Optimization training', period: '2019' },
 ];

@@ -6,7 +6,7 @@
 - Site: https://renatomission.vercel.app
 - GitHub: https://github.com/renmission
 - LinkedIn: https://www.linkedin.com/in/renmission/
-- Résumé: https://drive.google.com/file/d/1JvH_ZgyFGmfu62IwvOXkkmYfT8AKktxO/view?usp=share_link
+- Résumé: https://renatomission.vercel.app/resume
 
 ## Services
 
