@@ -36,8 +36,11 @@ export default function Hero() {
             </span>{' '}
             Ren.
           </span>
-          <span className="pop-in mt-3 block bg-gradient-to-r from-steel via-cobalt to-cobalt-deep bg-clip-text pb-[0.06em] text-transparent dark:from-[#C9D3DF] dark:via-cobalt dark:to-[#7FA6FF]" style={delay(0.25)}>
-            <Typewriter phrases={roles} />
+          <span className="pop-in mt-3 block" style={delay(0.25)}>
+            <Typewriter
+              phrases={roles}
+              className="bg-gradient-to-r from-steel via-cobalt to-cobalt-deep bg-clip-text pb-[0.06em] text-transparent dark:from-[#C9D3DF] dark:via-cobalt dark:to-[#7FA6FF]"
+            />
           </span>
         </h1>
 

@@ -12,7 +12,7 @@ module.exports = {
         line: token('line'),
         surface: token('surface'),
         // Fixed in both themes.
-        cobalt: { DEFAULT: '#2F6BFF', deep: '#1E4FD8' },
+        cobalt: { DEFAULT: '#2B66F8', deep: '#1E4FD8' },
         brass: '#C8A15A',
         steel: '#8A9BB0',
         navy: { DEFAULT: '#0D1B2A', 2: '#13263B', 3: '#1B3350' },

@@ -7,7 +7,7 @@ const values = ['Flexibility', 'Clarity', 'Collaboration'];
 export default function Story() {
   return (
     <section id="about" aria-labelledby="about-title" className="mx-auto max-w-page px-4 py-24 sm:px-8 md:py-36">
-      <h2 id="about-title" className="font-display text-base font-bold text-cobalt [font-stretch:115%]">
+      <h2 id="about-title" className="font-display text-base font-bold text-cobalt-deep [font-stretch:115%] dark:text-[#7FA6FF]">
         About me
       </h2>
       <p className="mt-6 font-display text-[clamp(1.6rem,4vw,3.25rem)] font-bold leading-[1.14] tracking-[-0.025em] [font-stretch:108%]">
